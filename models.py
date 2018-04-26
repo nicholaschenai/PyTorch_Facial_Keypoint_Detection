@@ -30,8 +30,9 @@ class Net(nn.Module):
         self.conv3 = nn.Conv2d(64, 128, 2)
         self.conv3_drop = nn.Dropout2d()
         self.conv4 = nn.Conv2d(128, 256, 1)
-        self.conv4_drop = nn.Dropout2d()
+        self.conv4_drop = nn.Dropout2d()      
         self.fc1 = nn.Linear(43264, 1000)
+        #self.fc1 = nn.Linear(6400, 1000)
         self.fc1_drop = nn.Dropout(p=0.5)
         self.fc2 = nn.Linear(1000, 136)
 
